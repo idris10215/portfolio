@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mondrian Composition</title>
+    <style>
+        body{
+            display: flex;;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 2rem;
+            gap: 4rem;
+        }
+
+        .container {
+            display: grid;
+            background-color: black;
+            grid-template-rows: 60px 75px 75px 35px 35px 40px;
+            grid-template-columns: 30px 75px 75px 40px 40px 20px;
+            gap: 5px;
+        }
+        
+
+        .text{
+            text-align: center;
+
+        }
+
+
+        .item {
+            background-color: white;
+        }
+
+        .b1 {
+            
+            grid-column: span 2;
+        }
+
+        .b3 {
+            background-color: orange;
+            grid-column: span 2;
+        }
+        
+        .b6 {
+            background-color: red;
+            grid-area: 2/2/4/4;
+        }
+
+        .b7 {
+            background-color: orange;
+            grid-column: span 2;
+        }
+
+        .b8 {
+            grid-row: span 3;
+        }
+
+        .b9 {
+            grid-row: span 2;
+        }
+
+        .b12 {
+            grid-row: span 2;
+            background-color: black;
+        }
+
+        .b14 {
+            grid-column: span 2;
+        }
+
+        .b15 {
+            grid-row: span 2;
+            background-color: orange;
+        }
+
+        .b17 {
+            background-color: blue;
+            grid-area: 5/4/7/6;
+        }
+
+        .b18 {
+            background-color: red;
+            grid-row: span 2;
+        }
+
+        .b20 {
+            background-color: black;
+        }
+
+
+        @media (max-width:400px){
+            .container{
+                display: grid;
+                grid-template-rows: 30px 37.5px 37.5px 17.5px 17.5px 20px;
+                grid-template-columns: 15px 37.5px 37.5px 20px 20px 10px;
+                gap: 2.5px;
+            }
+
+            body{
+                gap: 2rem;
+            }
+
+            p{
+                font-size: 14px
+            }
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+        <div class="text alignment">
+            <h1> <u>The Mondrian Composition</u></h1>
+            <p>My CSS grid code aptly 
+                reflects this aesthetic, with its precise layout and strategic placement of elements 
+                mimicking Mondrian's iconic compositions. Through the utilization of grid-template-rows, 
+                grid-template-columns, and grid-area properties, my code effectively organizes the 
+                elements into a visually striking arrangement reminiscent of Mondrian's artistic style. </p><hr>
+        </div>
+        <div class="container">
+            <div class="item b1"></div>
+            <div class="item b2"></div>
+            <div class="item b3"></div>
+            <div class="item b4"></div>
+            <div class="item b5"></div>
+            <div class="item b6"></div>
+            <div class="item b7"></div>
+            <div class="item b8"></div>
+            <div class="item b9"></div>
+            <div class="item b10"></div>
+            <div class="item b11"></div>
+            <div class="item b12"></div>
+            <div class="item b13"></div>
+            <div class="item b14"></div>
+            <div class="item b15"></div>
+            <div class="item b16"></div>
+            <div class="item b17"></div>
+            <div class="item b18"></div>
+            <div class="item b19"></div>
+            <div class="item b20"></div>
+        </div>
+
+</body>
+</html>
